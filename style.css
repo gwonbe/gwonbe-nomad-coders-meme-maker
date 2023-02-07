@@ -1,0 +1,116 @@
+@import "reset.css";
+
+/* body */
+
+body{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: gainsboro;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* canvas */
+
+canvas{
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* color */
+
+.color-options{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+input#color{
+    background-color: white;
+}
+.color-option{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: transform ease-in-out, .1s;
+}
+.color-option:hover{
+    transform: scale(1.2);
+}
+
+/* button */
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+span{
+    text-align: center;
+}
+input#btn-text{
+    all: unset;
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-weight: 500;
+    text-align: center;
+    background-color: white;
+}
+input#btn-file{
+    display: none;
+}
+label{
+    all: unset;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: royalblue;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: opacity linear .1s;
+}
+button{
+    all: unset;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: royalblue;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: opacity linear .1s;
+}
+button:hover{
+    opacity: 0.85;
+}
+
+/* developer information */
+
+.developer{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: LightCoral;
+    padding: 10%;
+    border-radius: 10px;
+}
+
+#developerTitle{
+    background-color: black;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: LightGoldenRodYellow;
+}
